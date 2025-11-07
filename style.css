@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-image: url('assets/header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 459px;
+}
+
+header.container {
+    width: 757px;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 80px;
+}
+
+header .container h2 {
+    color: white;
+    font-family: 'Luckiest Guy';
+    font-size: 56px;
+    font-weight: 400;
+    max-width: 313px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header .container p {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+div.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+a.light {
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+a.dark {
+    background-color: rgb(28, 27, 27);
+    padding: 10px 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+section.one .content-single {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto;
+    padding: 20px 0;
+}
+
+section.one .content-single img {
+    width: 450px;
+}
+
+.content-single .text h3 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.content-single .text p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.item-1 {
+    order: 1;
+}
+
+.item-2 {
+    order: 2;
+}
+
+section.two .container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+div.content h3 {
+    font-family: 'Luckiest Guy';
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+footer {
+    background: rgb(24, 24, 24);
+    padding: 15px 0;
+    justify-content: center;
+    display: flex;
+}
+
+footer img {
+    margin-right: 10px;
+}
+
+footer p {
+    font-family: 'luckiest guy';
+    font-weight: 300;
+    color: white;
+    font-size: 30px;
+    padding-top: 4px;
+}
+
+@media screen and (max-width: 450px) {
+
+    header .container h2 {
+        color: white;
+        font-family: 'Luckiest Guy';
+        font-size: 32px;
+        font-weight: 400;
+        padding-top: 25px;
+    }
+
+    header .container p {
+        color: white;
+        font-size: 15px;
+        font-weight: 400;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding: 15px;
+    }
+
+    div.buttons {
+        padding: 15px;
+        display: inline-block;
+        justify-content: center;
+        margin-bottom: 20px;
+        justify-content: space-around;
+    }
+
+    div.buttons a {
+        display: block ;
+        margin-bottom: 15px;
+    }
+
+    a.light {
+        background-color: white;
+        padding: 10px 15px;
+        border-radius: 15px;
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    a.dark {
+        background-color: rgb(28, 27, 27);
+        padding: 10px 15px;
+        border-radius: 15px;
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    section.one .content-single {
+        display: inline-block;
+        padding: 20px 0;
+    }
+
+    section.one .content-single img {
+        width: 90%;
+        margin: auto;
+    }
+
+    .content-single .text h3 {
+        padding: 15px;
+    }
+
+    .content-single .text p {
+        padding: 15px;
+    }
+
+    section.two .container img {
+        width: 90%;
+        margin: auto;
+    }
+
+    div.content h3 {
+        font-size: 30px;
+    }
+
+    div.content p {
+        padding: 15px;
+    }
+}
