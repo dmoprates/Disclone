@@ -1,211 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:wght@400;800&display=swap');
+
+/* GERAL */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+   padding: 0;
+   margin: 0;
+   border: 0;
+   box-sizing: border-box;
 }
+
+body {
+   width: 100vw;
+}
+
+h1, h2 {
+   font-family: Luckiest Guy;
+   font-size: 2rem;
+   font-weight: 400;
+   text-transform: uppercase;
+}
+
+h3, p {
+   font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+   color: #FFF;
+}
+
+h3 {
+   font-size: 1.5rem;
+   font-weight: 800;
+}
+
+h2, h3, p {
+   color: #23272A;
+}
+
+p {
+   font-size: 1rem;
+   font-weight: 400;
+}
+
+/**************** HEADER *******************/
 
 header {
-    background-image: url('assets/header.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 459px;
+   background: url('assets/header-background-mobile.png');
+   width: 100%;
+   padding: 1.5rem;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-content: center;
+   flex-wrap: wrap;
+
+   margin-left: auto;
+   margin-right: auto;
 }
 
-header.container {
-    width: 757px;
-    margin: 0 auto;
-    align-items: center;
-    padding-top: 80px;
+header #header-content {
+   width: 70%;
+   max-width: 37.25rem;
 }
 
-header .container h2 {
-    color: white;
-    font-family: 'Luckiest Guy';
-    font-size: 56px;
-    font-weight: 400;
-    max-width: 313px;
-    margin: 0 auto;
-    text-align: center;
+header #header-content h1 {
+   text-align: left;
+
+   width: 17.375rem;
+   margin-top: 3rem;
+   margin-bottom: 1.5rem;
 }
 
-header .container p {
-    color: white;
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 40px;
-    margin-bottom: 40px;
+header #header-content p {
+   color: #FFF;
+   max-width: 100%;
+   margin-bottom: 1.5rem;
 }
 
-div.buttons {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    justify-content: space-around;
+header #header-content #header-buttons button {
+   width: 100%;
+   height: 3.375rem;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   border-radius: 1.75rem;
+   cursor: pointer;
+
+   font-size: 1rem;
 }
 
-a.light {
-    background-color: white;
-    padding: 10px 15px;
-    border-radius: 15px;
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    font-weight: 400;
+header #header-content #header-buttons button#download {
+   background: #FFF;
+   color: #23272A;
+   margin-bottom: 1rem;
 }
 
-a.dark {
-    background-color: rgb(28, 27, 27);
-    padding: 10px 15px;
-    border-radius: 15px;
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    font-weight: 400;
+header #header-content #header-buttons button#web-discord {
+   background: #23272A;
+   color: #FFF;
+   margin-bottom: 3rem;
 }
 
-section.one .content-single {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: auto auto;
-    padding: 20px 0;
+/************** MAIN *****************/
+
+main {
+   margin: auto;
 }
 
-section.one .content-single img {
-    width: 450px;
+#discord-servers {
+   width: 90%;
+   margin: auto;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
 }
 
-.content-single .text h3 {
-    font-size: 30px;
-    font-weight: 800;
-    margin-bottom: 15px;
+#discord-servers #image-discord-servers,
+#discord-channel #discord-channel-details #image-discord-channel,
+#discord-members #discord-members-details #image-discord-members,
+#discord-connection #discord-connection-details #image-discord-connection {
+   margin-bottom: 1.69rem;
 }
 
-.content-single .text p {
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 15px;
+#discord-servers #image-discord-servers img,
+#discord-channel #discord-channel-details #image-discord-channel img,
+#discord-members #discord-members-details #image-discord-members img,
+#discord-connection #discord-connection-details #image-discord-connection img {
+   width: 100%;
+   margin: auto;
 }
 
-.item-1 {
-    order: 1;
+#discord-servers #info-discord-servers h3,
+#discord-channel #discord-channel-details #info-discord-channel h3,
+#discord-connection #discord-connection-details #info-discord-channel h3,
+#discord-members #discord-members-details #info-discord-members h3 {
+   margin-top: 1rem;
+   margin-bottom: 1.69rem;
 }
 
-.item-2 {
-    order: 2;
+#discord-servers #info-discord-servers p {
+   margin-bottom: 2.5rem;
 }
 
-section.two .container {
-    margin: 0 auto;
-    text-align: center;
+#discord-channel {
+   background-color: #F6F6F6;;
 }
 
-div.content h3 {
-    font-family: 'Luckiest Guy';
-    font-size: 40px;
-    font-weight: 400;
-    margin-bottom: 20px;
+#discord-channel,
+#discord-members,
+#discord-connection {
+   width: 100%;
+   padding: 2.5rem 1.5rem;
 }
+
+#discord-channel #discord-channel-details,
+#discord-members #discord-members-details,
+#discord-connection #discord-connection-details {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-content: center;
+   flex-wrap: wrap;
+
+   width: 90%;
+}
+
+#discord-connection {
+   background-color: #F6F6F6;
+}
+
+#discord-connection #discord-connection-details #info-discord-connection h2 {
+   margin-top: 1.69rem;
+   margin-bottom: 1.69rem;
+}
+
+/************** FOOTER *****************/
 
 footer {
-    background: rgb(24, 24, 24);
-    padding: 15px 0;
-    justify-content: center;
-    display: flex;
+   background-color: #23272A;
+   padding: 2.5rem 8rem 3.19rem 8rem;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 
-footer img {
-    margin-right: 10px;
+footer svg {
+   width: 10.125rem;
+   height: 2.8125rem;
 }
 
-footer p {
-    font-family: 'luckiest guy';
-    font-weight: 300;
-    color: white;
-    font-size: 30px;
-    padding-top: 4px;
-}
 
-@media screen and (max-width: 450px) {
+/*************** MEDIA QUERIES **************/
 
-    header .container h2 {
-        color: white;
-        font-family: 'Luckiest Guy';
-        font-size: 32px;
-        font-weight: 400;
-        padding-top: 25px;
-    }
+@media screen and (min-width: 1280px) {
+   h1 {
+      font-size: 3.5rem;
+   }
 
-    header .container p {
-        color: white;
-        font-size: 15px;
-        font-weight: 400;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        padding: 15px;
-    }
+   h2 {
+      font-size: 2.5rem;
+   }
 
-    div.buttons {
-        padding: 15px;
-        display: inline-block;
-        justify-content: center;
-        margin-bottom: 20px;
-        justify-content: space-around;
-    }
+   h3 {
+      font-size: 2.5rem;
+   }
 
-    div.buttons a {
-        display: block ;
-        margin-bottom: 15px;
-    }
+   header {
+      background: url('assets/header-background.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+   }
 
-    a.light {
-        background-color: white;
-        padding: 10px 15px;
-        border-radius: 15px;
-        text-decoration: none;
-        color: black;
-        font-size: 16px;
-        font-weight: 400;
-    }
+   header #header-content {
+      width: 70%;
+      max-width: 47.3125rem;
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+      margin-left: auto;
+      margin-right: auto;
 
-    a.dark {
-        background-color: rgb(28, 27, 27);
-        padding: 10px 15px;
-        border-radius: 15px;
-        text-decoration: none;
-        color: white;
-        font-size: 16px;
-        font-weight: 400;
-    }
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
 
-    section.one .content-single {
-        display: inline-block;
-        padding: 20px 0;
-    }
+   header #header-content h1, header #header-content p {
+      text-align: center;
+   }
 
-    section.one .content-single img {
-        width: 90%;
-        margin: auto;
-    }
+   header #header-content h1 {
+      width: 19.5625rem;
+   }
 
-    .content-single .text h3 {
-        padding: 15px;
-    }
+   header #header-content #header-buttons {
+      display: flex;
+   }
 
-    .content-single .text p {
-        padding: 15px;
-    }
+   header #header-content #header-buttons button#download {
+      width: 12.8125rem;
+   }
 
-    section.two .container img {
-        width: 90%;
-        margin: auto;
-    }
+   header #header-content #header-buttons button#web-discord {
+      margin-left: 1rem;
+      width: 17.5625rem;
+   }
 
-    div.content h3 {
-        font-size: 30px;
-    }
+   #discord-servers {
+      flex-direction: row;
+      max-width: 60.79rem;
+      margin: auto;
+   }
 
-    div.content p {
-        padding: 15px;
-    }
+   #discord-servers #image-discord-servers,
+   #discord-members #discord-members-details #image-discord-members {
+      margin-right: 1rem;
+   }
+
+   #discord-servers #image-discord-servers img,
+   #discord-channel #discord-channel-details #image-discord-channel img,
+   #discord-members #discord-members-details #image-discord-members img {
+      width: 37.9375rem;
+   }
+
+
+   #discord-channel #discord-channel-details {
+      flex-direction: row-reverse;
+   }
+
+   #discord-channel #discord-channel-details,
+   #discord-members #discord-members-details {
+      max-width: 60rem;
+      margin: auto;
+   }
+
+   #discord-channel #discord-channel-details #info-discord-channel,
+   #discord-members #discord-members-details #info-discord-members {
+      width: 21rem;
+   }
+
+   #discord-members #discord-members-details {
+      flex-direction: row;
+   }
+
+   #discord-connection #discord-connection-details {
+      margin: auto;
+   }
+
+   #discord-connection #discord-connection-details #info-discord-connection {
+      max-width: 50.125rem;
+   }
+
+   #discord-connection #discord-connection-details #info-discord-connection h2 {
+      width: 38rem;
+   }
+
+   #discord-connection #discord-connection-details #info-discord-connection h2,
+   #discord-connection #discord-connection-details #info-discord-connection p {
+      text-align: center;
+   }
+
+   #discord-connection #discord-connection-details #image-discord-connection img {
+      width: 49rem;
+      margin: auto;
+   }
+
+   footer svg {
+      width: 14.375rem;
+      height: 3.9375rem;
+   }
 }
