@@ -10,3 +10,6 @@ Esse projeto foi proposto pela expert Michele Ambrosio da plataforma educacional
 - Utilização do Layout disponibilizado no arquivo Figma disponível [aqui](https://www.figma.com/design/NRBYrG5d4DSzObv7dpTqoM/Desafio-Responsividade---DIO?node-id=1-2&t=Rk2enWJM1vbyLjuU-0)
 - Utilização de unidades de medidas relativas 'rem';
 - Codificação considerando o conceito Mobile-First.
+
+## Acesso
+A aplicação pode ser acessada [aqui](#)
