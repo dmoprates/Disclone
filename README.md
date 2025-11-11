@@ -12,4 +12,10 @@ Esse projeto foi proposto pela expert Michele Ambrosio da plataforma educacional
 - Codificação considerando o conceito Mobile-First.
 
 ## Acesso
-A aplicação pode ser acessada [aqui](#)
+A aplicação pode ser acessada [aqui](https://dmoprates.github.io/Disclone/)
+
+## Pré-Visualização
+- Visualização para desktop
+![Captura de tela do portal](assets/Screenshot_01.pngScreenshot.png)
+- Visualização para mobile
+![Captura de tela do portal](assets/Screenshot_02.pngScreenshot.png)
