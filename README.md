@@ -15,7 +15,7 @@ Esse projeto foi proposto pela expert Michele Ambrosio da plataforma educacional
 A aplicação pode ser acessada [aqui](https://dmoprates.github.io/Disclone/)
 
 ## Pré-Visualização
-- Visualização para desktop
+- Visualização para desktop</br>
 ![Captura de tela do portal](assets/Screenshot_01.png)
-- Visualização para mobile
+- Visualização para mobile</br>
 ![Captura de tela do portal](assets/Screenshot_02.png)
