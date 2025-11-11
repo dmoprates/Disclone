@@ -16,6 +16,6 @@ A aplicação pode ser acessada [aqui](https://dmoprates.github.io/Disclone/)
 
 ## Pré-Visualização
 - Visualização para desktop
-![Captura de tela do portal](assets/Screenshot_01.pngScreenshot.png)
+![Captura de tela do portal](assets/Screenshot_01.png)
 - Visualização para mobile
-![Captura de tela do portal](assets/Screenshot_02.pngScreenshot.png)
+![Captura de tela do portal](assets/Screenshot_02.png)
